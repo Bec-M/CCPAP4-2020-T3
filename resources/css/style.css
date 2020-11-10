@@ -1,4 +1,37 @@
+/* GLOBAL DEFULTS */
+
 body {
     background-color: darksalmon;
+}
+
+/* HEADINGS AND TYPOGRAPHY */
+
+h1 { 
+    background-color: bisque;
+color: coral;
+}
+
+/* LAYOUTS */
+.layout-wide  {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER, MAIN & FOOTER */
+
+header {
+    background-color: peachpuff;
+}
+
+main {
+    background-color: palevioletred;
+}
+
+/* NAVIGATION */
+
+/* MODULES */
+
+{
     font-family: Arial, Helvetica, sans-serif;
 }
