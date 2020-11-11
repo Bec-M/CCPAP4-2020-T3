@@ -11,7 +11,8 @@ a {
     color: brown;
 }
 
-img {
+img,
+iframe {
     max-width: 100%;
 }
 
@@ -44,5 +45,19 @@ main {
 /* NAVIGATION */
 
 /* MODULES */
+.news-component {
+    background-color: plum;
+    padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .news-component {
+        background-color: pink;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+    }
 
 }
