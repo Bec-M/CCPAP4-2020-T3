@@ -1,14 +1,23 @@
 /* GLOBAL DEFULTS */
 @import 'http://necolas.github.io/normalize.css/8.0.1/normalize.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap');
+
+*  {
+    box-sizing: border-box;
+}
+
 body {
     background-color: darksalmon;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
+
+    line-height: 1.6;
 }
 
 a {
     color: brown;
+;
 }
 
 img,
@@ -17,6 +26,14 @@ iframe {
 }
 
 /* HEADINGS AND TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Syncopate', sans-serif;
+}
 
 h1 { 
     background-color: bisque;
@@ -32,9 +49,17 @@ color: coral;
     padding: 20px;
 }
 
+.highlight {
+    font-weight: bold;
+}
+
 /* HEADER, MAIN & FOOTER */
 
 header {
+    background-color: peachpuff;
+}
+
+footer {
     background-color: peachpuff;
 }
 
@@ -56,7 +81,7 @@ main {
         background-color: pink;
 
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
 
