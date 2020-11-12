@@ -37,11 +37,11 @@ h3,
 h4,
 h5 {
     font-family: 'Syncopate', sans-serif;
-    color: orangered;
+    color: coral;
 }
 
 h1 { 
-color: lightcoral;
+color: coral;
 }
 
 /* LAYOUTS */
@@ -60,12 +60,12 @@ color: lightcoral;
 /* HEADER, MAIN & FOOTER */
 
 header {
-    background-color: palevioletred;
+    background-color: coral;
     color: white;
 }
 
 footer {
-    background-color: palevioletred;
+    background-color: coral;
     color: white;
     text-align: center;
 }
@@ -78,14 +78,14 @@ main {
 
 /* MODULES */
 .news-component {
-    background-color: black;
+    background-color: palevioletred;
     padding: 20px;
 }
 
-@media screen and (min-width: 800px) {
-
+@media screen and (min-width: 800px)  {
     .news-component {
-        background-color: coral;
+
+        background-color: pink;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -93,3 +93,5 @@ main {
     }
 
 }
+
+
