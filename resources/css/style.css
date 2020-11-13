@@ -1,7 +1,7 @@
 /* GLOBAL DEFULTS */
 @import 'http://necolas.github.io/normalize.css/8.0.1/normalize.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Candal&family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Happy+Monkey&family=Syncopate:wght@400;700&display=swap');
 
 *  {
     box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
 }
 
 a {
-    color: chocolate;
+    color: #950217;
     font-weight: bold;
 }
 
@@ -36,14 +36,31 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    color: #AE0E36FF;
+}
+
+h6 {
     font-family: 'Syncopate', sans-serif;
-    color: coral;
+    color: white;
+    font-size: 30px;
 }
 
-h1 { 
-color: coral;
+h7 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fd3a2d;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 40px;
+}
 /* LAYOUTS */
 .layout-wide  {
     max-width: 1000px;
@@ -60,32 +77,32 @@ color: coral;
 /* HEADER, MAIN & FOOTER */
 
 header {
-    background-color: coral;
+    background-color: #E05745;
     color: white;
 }
 
 footer {
-    background-color: coral;
+    background-color: #E05745;
     color: white;
     text-align: center;
 }
 
 main {
-    background-color: papayawhip;
+    background-color: peachpuff;
 }
 
 /* NAVIGATION */
 
 /* MODULES */
 .news-component {
-    background-color: palevioletred;
+    background-color: #FFA177FF;
     padding: 20px;
 }
 
 @media screen and (min-width: 800px)  {
     .news-component {
 
-        background-color: pink;
+        background-color: #F98D79;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -94,4 +111,17 @@ main {
 
 }
 
+@media screen and (min-width: 600px)  {
+    .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px)  {
+    .photo-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} 
 
