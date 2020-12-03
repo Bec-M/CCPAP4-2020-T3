@@ -38,12 +38,12 @@ h4,
 h5 {
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: bold;
-    color: #AE0E36FF;
+    color: #E05745;
 }
 
 h6 {
     font-family: 'Syncopate', sans-serif;
-    color: white;
+    color: #E05745;
     font-size: 30px;
 }
 
@@ -51,7 +51,7 @@ h7 {
     font-family: 'Syncopate', sans-serif;
     font-weight: bold;
     font-size: 40px;
-    color: #fd3a2d;
+    color: orangered;
 }
 
 h1,
@@ -59,7 +59,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-size: 40px;
+    font-size: 50px;
 }
 /* LAYOUTS */
 .layout-wide  {
@@ -67,7 +67,7 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 
-    padding: 50px;
+    padding: 30px;
 }
 
 .highlight {
@@ -80,11 +80,12 @@ header {
     background-color: #E05745;
     color: white;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .star-logo img {
-        max-width: 250px;
+        max-width: 500px;
+        padding-top: 50px;
 }
 
 footer {
@@ -95,6 +96,20 @@ footer {
 
 main {
     background-color: peachpuff;
+}
+
+/* subs form */
+.subscription-wrapper {
+    background-color: #FFC96F;
+    padding-bottom: 50px;
+    line-height: 30px;
+}
+
+.subscription-wrapper label {
+    color: #E05745;
+    display: block;
+    font-weight: bold;
+    font-size: 26px;
 }
 
 /* NAVIGATION */
@@ -117,27 +132,55 @@ main {
     font-weight: bold;
     font-size: 20px;
     color: white;
+    }
 }
 
+/* this is for mobile view */
+
+@media screen and (max-width: 800px) {
+    .nav-inner {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-inner.open {
+        max-height: 100vh;
+    }
+}
+
+
+/*this is for large screen view */
 @media screen and (min-width: 800px) {
+
+    .nav-prompt {
+        display: none;
+    }
+
     .nav-inner ul {
         display: flex;
         justify-content: space-between;
     }
+
 }
 
 /* MODULES */
 .news-component {
-    background-color: #FFA177FF;
+    background-color: #FFC96F;
     padding: 40px;
 }
 
-@media screen and (min-width: 800px)  {
+@media screen and (min-width: 600px)  {
 
     .star-logo img {
-        max-width: 500px;
+        min-width: 300px;
     }
 
+@media screen and (max-width: 800px) {
+        .star-logo img {
+            max-width: 500px;
+    }
+    
+    
     .news-component {
 
         background-color: #F98D79;
